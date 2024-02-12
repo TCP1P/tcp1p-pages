@@ -1,4 +1,4 @@
-import { faChain, faCloud, faGear, faLock, faPhone, faQuestion, faSearch, faShield } from "@fortawesome/free-solid-svg-icons";
+import { faChain, faCloud, faGamepad, faGear, faLock, faPhone, faQuestion, faSearch, faShield } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export function Categories() {
@@ -30,18 +30,23 @@ export function Categories() {
         },
         {
             iconClass: faQuestion,
-            text: 'Miscellaneous',
+            text: 'Misc',
             description: 'This category covers various challenges that don\'t fit into specific categories.'
         },
         {
             iconClass: faShield,
-            text: 'PWN',
+            text: 'Binary Exploitation',
             description: 'This category involves exploiting vulnerabilities in binary programs and systems.'
         },
         {
             iconClass: faChain,
             text: 'Blockchain',
             description: 'This category involves challenges related to blockchain technology.'
+        },
+        {
+            iconClass: faGamepad,
+            text: 'Game Exploitation',
+            description: 'This category features challenges related to game development and exploiting or bypassing game security.'
         }
     ];
 
