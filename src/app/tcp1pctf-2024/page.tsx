@@ -1,6 +1,7 @@
 import { Categories } from "./categories";
 import { Countdown } from "./countdown";
 import { FAQ } from "./faq";
+import { Sponsor } from "./sponsors";
 
 export default function Page() {
     const ctfDate = new Date("2024-10-11").getTime()
@@ -30,6 +31,11 @@ export default function Page() {
                     <h2 className="text-4xl">Call for Sponsorships</h2>
                     <div className="divider"></div>
                     <p>The call for sponsorship for TCP1P-CTF 2024 is open! For more details contact us at <a className="link" href="mailto:tcp1pindo@gmail.com">tcp1pindo@gmail.com</a>.</p>
+                </div>
+                <div>
+                    <h2 className="text-4xl">Sponsors</h2>
+                    <div className="divider"></div>
+                    <Sponsor></Sponsor>
                 </div>
             </div>
         </div>
