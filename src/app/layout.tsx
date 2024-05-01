@@ -23,7 +23,10 @@ export const metadata: Metadata = {
     url:'https://github.com/dimasma0305'
   },
   creator:'Dimas Maulana',
-  icons: logo.src
+  icons: logo.src,
+  openGraph: {
+    images: logo.src
+  }
 }
 
 export default function RootLayout({
