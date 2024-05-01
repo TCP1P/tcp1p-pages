@@ -23,9 +23,9 @@ export const metadata: Metadata = {
     url:'https://github.com/dimasma0305'
   },
   creator:'Dimas Maulana',
-  icons: "https://tcp1p.team/TCP1P-logo.png",
+  icons: "https://tcp1p.team/TCP1P-logo.jpg",
   openGraph: {
-    images: "https://tcp1p.team/TCP1P-logo.png"
+    images: "https://tcp1p.team/TCP1P-logo.jpg"
   }
 }
 
