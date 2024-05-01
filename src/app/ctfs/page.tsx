@@ -45,6 +45,12 @@ export default function Page() {
             repoUrl: "https://github.com/TCP1P/TECHCOMFEST2024",
             date: new Date("2023-12-20"),
             children: "TECHCOMFEST CTF is a Capture The Flag (CTF) event organized by Politeknik Negeri Semarang in collaboration with TCP1P."
+        },
+        {
+            title: "TCP1P CTF Special Ramadhan 2024",
+            repoUrl: "https://github.com/TCP1P/TCP1P-CTF-Special-Ramadhan-2024",
+            date: new Date("2024-3-20"),
+            children: "TCP1P Capture The Flag (CTF) is CTF playground event conducted during Ramadhan in 2024."
         }
     ];
 
