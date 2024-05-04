@@ -25,7 +25,7 @@ export function FAQ() {
                 To join this CTF, we recommend that you first create a team on CTFtime. Once you have formed
                 your team, you can add this <a className="link" target="_blank"
                     href="https://ctftime.org/event/2256/">event</a> and wait for the start of the CTF on
-                October 6th. Lastly, don't forget to join our Discord server for more information. Here is the
+                October 11th. Lastly, don't forget to join our Discord server for more information. Here is the
                 link: <a className="link" target="_blank" rel="noopener noreferrer"
                     href="https://discord.gg/Gj6h9TjN3D">Discord</a>.
             </>

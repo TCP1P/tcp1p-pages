@@ -10,7 +10,7 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import { LogoHeader } from './_components/logo-header'
 import { NavbarBelow } from './_components/navbar-below'
-import logo from "../../public/TCP1P-logo.png"
+
 config.autoAddCss = false;
 
 const inter = Inter({ subsets: ['latin'] })
