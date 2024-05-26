@@ -1,4 +1,4 @@
-import { faChain, faCloud, faGamepad, faGear, faLock, faPhone, faQuestion, faSearch, faShield } from "@fortawesome/free-solid-svg-icons";
+import { faChain, faCloud, faGamepad, faGear, faLock, faPhone, faQuestion, faSearch, faShield, faArchive } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export function Categories() {
@@ -24,7 +24,7 @@ export function Categories() {
             description: 'This category involves deciphering and breaking encryption techniques and algorithms.'
         },
         {
-            iconClass: faSearch,
+            iconClass: faArchive,
             text: 'Forensics',
             description: 'This category focuses on analyzing digital evidence and investigating cybercrimes.'
         },
@@ -47,6 +47,11 @@ export function Categories() {
             iconClass: faGamepad,
             text: 'Game Exploitation',
             description: 'This category features challenges related to game development and exploiting or bypassing game security.'
+        },
+        {
+            iconClass: faSearch,
+            text: 'OSINT',
+            description: 'This category focuses on gathering information from publicly available sources.'
         }
     ];
 
