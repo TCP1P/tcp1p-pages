@@ -1,6 +1,7 @@
 import Image from "next/image"
 import GoogleImage from "../../../public/Google-Cloud-Emblem.png"
 import SeccodeId from "../../../public/secodeid.jpeg"
+import OffSec from "../../../public/OffSec_Tagline_White_Text.png"
 import Link from "next/link"
 
 export function Sponsor() {
@@ -10,6 +11,12 @@ export function Sponsor() {
             text: "Infra sponsored by goo.gle/ctfsponsorship",
             image: GoogleImage,
             url: "https://goo.gle/ctfsponsorship"
+        },
+        {
+            name: "OffSec",
+            text: "Empowering individuals and organizations to fight cyber threats with indispensable cybersecurity skills and resources.",
+            image: OffSec,
+            url: "https://www.offsec.com/"
         },
         {
             name: "Seccodeid Forum",
