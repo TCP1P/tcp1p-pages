@@ -1,5 +1,6 @@
 import { Categories } from "./categories";
 import { Countdown } from "./countdown";
+import { Donator } from "./donations";
 import { FAQ } from "./faq";
 import { Sponsor } from "./sponsors";
 
@@ -36,6 +37,11 @@ export default function Page() {
                     <h2 className="text-4xl">Sponsors</h2>
                     <div className="divider"></div>
                     <Sponsor></Sponsor>
+                </div>
+                <div>
+                    <h2 className="text-4xl">Dontors</h2>
+                    <div className="divider"></div>
+                    <Donator></Donator>
                 </div>
             </div>
         </div>
