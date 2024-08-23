@@ -39,7 +39,7 @@ export default function Page() {
                     <Sponsor></Sponsor>
                 </div>
                 <div>
-                    <h2 className="text-4xl">Dontors</h2>
+                    <h2 className="text-4xl">Donators</h2>
                     <div className="divider"></div>
                     <Donator></Donator>
                 </div>
