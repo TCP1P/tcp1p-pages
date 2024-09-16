@@ -2,10 +2,18 @@ import Image from "next/image"
 import GoogleImage from "../../../public/Google-Cloud-Emblem.png"
 import SeccodeId from "../../../public/secodeid.jpeg"
 import OffSec from "../../../public/OffSec_Tagline_White_Text.png"
+import Archonlabs from "../../../public/Archonlabs.png"
 import Link from "next/link"
 
 export function Sponsor() {
     const sponsors = [
+
+        {
+            name: "OffSec",
+            text: "Empowering individuals and organizations to fight cyber threats with indispensable cybersecurity skills and resources.",
+            image: OffSec,
+            url: "https://www.offsec.com/"
+        },
         {
             name: "Google",
             text: "Infra sponsored by goo.gle/ctfsponsorship",
@@ -13,10 +21,10 @@ export function Sponsor() {
             url: "https://goo.gle/ctfsponsorship"
         },
         {
-            name: "OffSec",
-            text: "Empowering individuals and organizations to fight cyber threats with indispensable cybersecurity skills and resources.",
-            image: OffSec,
-            url: "https://www.offsec.com/"
+            name: "Archonlabs",
+            text: "Archonlabs focuses on adversary simulation and training to help you strengthen your cyber defense and get ready for the unforeseen attacks.",
+            image: Archonlabs,
+            url: "https://web.facebook.com/archonlabs.id/"
         },
         {
             name: "Seccodeid Forum",
