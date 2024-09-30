@@ -3,7 +3,7 @@ import { TimelineProps, Timelines } from "./timeline";
 export default function Page() {
     const ctfs: TimelineProps[] = [
         {
-            title: "Intechfest CTF 2023",
+            title: "INTECHFEST CTF 2023",
             repoUrl: "https://github.com/TCP1P/INTECHFEST-CTF-2023-Challenges",
             date: new Date("2023-9-9"),
             children: "The Information and Technology Festival, also known as INTECFEST, is an event hosted by the Computer Club at Bali State Polytechnic. It consists of three main events: Web Design Competition, UI/UX Competition, and Capture The Flag (CTF)."
@@ -51,6 +51,12 @@ export default function Page() {
             repoUrl: "https://github.com/TCP1P/TCP1P-CTF-Special-Ramadhan-2024",
             date: new Date("2024-3-20"),
             children: "TCP1P Capture The Flag (CTF) is CTF playground event conducted during Ramadhan in 2024."
+        },
+        {
+            title: "INTECHFEST CTF 2024",
+            repoUrl: "https://github.com/TCP1P/INTECHFEST-CTF-2024-Challenges-Public",
+            date: new Date("2024-9-9"),
+            children: "The Information and Technology Festival, also known as INTECFEST, is an event hosted by the Computer Club at Bali State Polytechnic. It consists of three main events: Web Design Competition, UI/UX Competition, and Capture The Flag (CTF)."
         }
     ];
 

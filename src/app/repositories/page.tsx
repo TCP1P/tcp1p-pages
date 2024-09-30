@@ -13,10 +13,10 @@ export default function Page() {
             children: "The TCP1P Theme is a CTFd theme built based on the CTFd core-beta theme."
         },
         {
-            title: "CTF Mobile Exploitation",
-            repoUrl: "https://github.com/TCP1P/CTF-Mobile-Exploitation",
-            children: "This repository includes the setup used for mobile exploitation in the TCP1P CTF 2023."
-        }
+            title: "Mobile POC Tester",
+            repoUrl: "https://github.com/TCP1P/Mobile-POC-Tester",
+            children: "This repository contains the mobile Proof of Concept (POC) tester for CTF challenges. The POC tester is a web application that allows users to test their POCs against a vulnerable Android application. It supports multiple challenges within a single Android emulator."
+        },
     ];
 
     return (
