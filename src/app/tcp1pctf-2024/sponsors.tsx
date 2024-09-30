@@ -3,12 +3,18 @@ import GoogleImage from "../../../public/Google-Cloud-Emblem.png"
 import SeccodeId from "../../../public/secodeid.jpeg"
 import OffSec from "../../../public/OffSec_Tagline_White_Text.png"
 import Archonlabs from "../../../public/Archonlabs.png"
+import OtterSec from "../../../public/ottersec.png"
 import Link from "next/link"
 
 export function Sponsor() {
     const sponsors = [
-
         {
+            name: "Ottersec",
+            text: "Originally independent security researchers, our team has a proven track record in both web3 and traditional security. We work closely with passionate teams to provide a holistic and collaborative approach to security.",
+            image: OtterSec,
+            url: "https://osec.io/"
+        }
+        ,{
             name: "OffSec",
             text: "Empowering individuals and organizations to fight cyber threats with indispensable cybersecurity skills and resources.",
             image: OffSec,
@@ -57,6 +63,5 @@ export function Sponsor() {
                 </div>
             ))}
         </div>
-
     </>
 }
