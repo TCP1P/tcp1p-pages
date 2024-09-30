@@ -3,7 +3,7 @@ import GoogleImage from "../../../public/Google-Cloud-Emblem.png"
 import SeccodeId from "../../../public/secodeid.jpeg"
 import OffSec from "../../../public/OffSec_Tagline_White_Text.png"
 import Archonlabs from "../../../public/Archonlabs.png"
-import OtterSec from "../../../public/ottersec.png"
+import OtterSec from "../../../public/ottersec.jpg"
 import Link from "next/link"
 
 export function Sponsor() {
