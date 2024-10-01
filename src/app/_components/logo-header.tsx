@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import logo from '../../../public/TCP1P-logo-no-bg.svg'
+import logo from '../../../public/TCP1P _Main White Red.svg'
 
 export function LogoHeader() {
     return <>
