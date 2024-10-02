@@ -4,6 +4,7 @@ import SeccodeId from "../../../public/secodeid.jpeg"
 import OffSec from "../../../public/OffSec_Tagline_White_Text.png"
 import Archonlabs from "../../../public/Archonlabs.png"
 import OtterSec from "../../../public/ottersec.jpg"
+import Seclab from "../../../public/seclab.svg"
 import Link from "next/link"
 
 export function Sponsor() {
@@ -27,6 +28,12 @@ export function Sponsor() {
             url: "https://goo.gle/ctfsponsorship"
         },
         {
+            name: "SecLab Indonesia",
+            text: "SecLab Indonesia offers penetration testing, security audit, human development and digital forensic services to help organizations secure their information assets.",
+            image: Seclab,
+            url: "https://seclab.id/"
+        },
+        {
             name: "Archonlabs",
             text: "Archonlabs focuses on adversary simulation and training to help you strengthen your cyber defense and get ready for the unforeseen attacks.",
             image: Archonlabs,
@@ -37,7 +44,7 @@ export function Sponsor() {
             text: "Seccodeid Forum is a community of cybersecurity enthusiasts in Indonesia.",
             image: SeccodeId,
             url: "https://seccodeid.com/"
-        }
+        },
     ]
     return <>
         <div className="grid justify-center lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4">
