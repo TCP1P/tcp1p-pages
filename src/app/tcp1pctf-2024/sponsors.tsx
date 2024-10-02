@@ -29,7 +29,7 @@ export function Sponsor() {
         },
         {
             name: "SecLab Indonesia",
-            text: "SecLab Indonesia offers penetration testing, security audit, human development and digital forensic services to help organizations secure their information assets.",
+            text: "PT. Negeri Seni Teknologi (seclab.id) is cyber security consulting company that primarily focus on specialized penetration testing, reverse engineering and human development.",
             image: Seclab,
             url: "https://seclab.id/"
         },
