@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Categories } from "./categories";
 import { Countdown } from "./countdown";
 import { Donator } from "./donations";
@@ -6,9 +7,11 @@ import { Sponsor } from "./sponsors";
 import Crate from "@widgetbot/crate"
 
 export default function Page() {
-    new Crate({
-        server: '1127235720629723176', // TCP1P-CTF
-        channel: '1127238284075081808' // #announcement
+    useEffect(()=>{
+        new Crate({
+            server: '1127235720629723176', // TCP1P-CTF
+            channel: '1127238284075081808' // #announcement
+        })
     })
     const ctfDate = new Date("2024-10-11").getTime()
     return <>
