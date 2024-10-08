@@ -1,6 +1,6 @@
 import { Categories } from "./categories";
 import { Countdown } from "./countdown";
-import { CrateTemplate } from "./crate";
+import { WidgetBotTemplate } from "./crate";
 import { Donator } from "./donations";
 import { FAQ } from "./faq";
 import { Sponsor } from "./sponsors";
@@ -45,7 +45,7 @@ export default function Page() {
                     <Donator></Donator>
                 </div>
             </div>
-            <CrateTemplate></CrateTemplate>
+            <WidgetBotTemplate></WidgetBotTemplate>
         </div>
     </>
 }

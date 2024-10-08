@@ -1,13 +1,9 @@
 'use client'
-import { useEffect } from "react";
-import Crate from "@widgetbot/react-embed"
+import WidgetBot from "@widgetbot/react-embed"
 
-export function CrateTemplate() {
-    useEffect(()=>{
-        new Crate({
-            server: '1127235720629723176', // TCP1P-CTF
-            channel: '1127238284075081808' // #announcement
-        })
-    }, [])
-    return <></>
+export function WidgetBotTemplate() {
+    return   <WidgetBot
+        server="1127235720629723176"
+        channel="1127238284075081808"
+    />
 }
