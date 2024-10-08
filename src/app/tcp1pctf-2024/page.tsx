@@ -1,3 +1,4 @@
+'use client'
 import { useEffect } from "react";
 import { Categories } from "./categories";
 import { Countdown } from "./countdown";
