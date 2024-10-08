@@ -17,11 +17,11 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'TCP1P',
-  description: 'TCP1P is an Indonesian CTF team actively engaging in competitive cybersecurity events on ctftime.',
-  authors: {
+  description: 'TCP1P is Indonesian CTF community dedicated to organizing engaging Capture The Flag events and collaborating with local competitions. Our mission is to elevate the quality of CTF challenges in Indonesia and foster a thriving cybersecurity ecosystem through knowledge sharing.',
+  authors: [{
     name: 'Dimas Maulana',
     url:'https://github.com/dimasma0305'
-  },
+  }],
   creator:'Dimas Maulana',
   icons: "https://tcp1p.team/favicon.ico",
   openGraph: {

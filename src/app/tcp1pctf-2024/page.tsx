@@ -1,6 +1,6 @@
 import { Categories } from "./categories";
 import { Countdown } from "./countdown";
-import { WidgetBotTemplate } from "./crate";
+import { CrateTemplate } from "./crate";
 import { Donator } from "./donations";
 import { FAQ } from "./faq";
 import { Sponsor } from "./sponsors";
@@ -8,6 +8,7 @@ import { Sponsor } from "./sponsors";
 export default function Page() {
     const ctfDate = new Date("2024-10-11").getTime()
     return <>
+        <CrateTemplate></CrateTemplate>
         <div className="flex flex-col gap-4">
             <div className="grid lg:w-8/12 md:w-10/12 self-center text-center gap-8 mx-4">
                 <div className="items-center">
@@ -45,7 +46,6 @@ export default function Page() {
                     <Donator></Donator>
                 </div>
             </div>
-            <WidgetBotTemplate></WidgetBotTemplate>
         </div>
     </>
 }

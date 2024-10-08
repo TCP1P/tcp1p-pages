@@ -1,9 +1,15 @@
-'use client'
-import WidgetBot from "@widgetbot/react-embed"
+"use client"
+import Script from "next/script";
 
-export function WidgetBotTemplate() {
-    return   <WidgetBot
-        server="1127235720629723176"
-        channel="1127238284075081808"
-    />
+export function CrateTemplate() {
+    return <>
+    <Script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" dangerouslySetInnerHTML={{
+        __html: `
+        new Crate({
+            server: '299881420891881473',
+            channel: '355719584830980096'
+        })`
+    }}>
+    </Script>
+    </>
 }
