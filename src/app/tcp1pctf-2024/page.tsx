@@ -14,9 +14,9 @@ export default function Page() {
                 <div className="items-center">
                     <h1 className="text-6xl">TCP1P CTF 2024</h1>
                     <p>Exploring Nusantara's Digital Realm</p>
-                    <div className="flex flex-col w-full items-center mt-3">
+                    {/* <div className="flex flex-col w-full items-center mt-3">
                         <Countdown endDate={ctfDate}></Countdown>
-                    </div>
+                    </div> */}
                     <div className="divider"></div>
                     <p className="text-justify">TCP1PCTF 2024 is an annual Capture The Flag (CTF) event organized by the TCP1P community. This marks the second edition of our international CTF event. This thrilling CTF follows a jeopardy-style format and encompasses a variety of challenges ranging in difficulty from easy to medium-high. Participants will have the opportunity to test their skills and knowledge across various categories, ensuring a diverse and engaging experience.</p>
                 </div>

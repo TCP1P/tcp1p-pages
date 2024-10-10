@@ -9,7 +9,6 @@ export function Countdown({ endDate }: { endDate: number }) {
             setTimeLeft(calculateTimeLeft());
         }, 1000);
 
-        // Clear the interval when the component unmounts
         return () => clearInterval(timer);
     }, []);
 
@@ -18,7 +17,6 @@ export function Countdown({ endDate }: { endDate: number }) {
         const difference = endDate - now;
 
         if (difference <= 0) {
-            // Timer has expired, you can handle this case as needed
             return { days: 0, hours: 0, minutes: 0, seconds: 0 };
         }
 
