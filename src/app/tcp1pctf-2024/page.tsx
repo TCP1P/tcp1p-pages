@@ -6,7 +6,7 @@ import { FAQ } from "./faq";
 import { Sponsor } from "./sponsors";
 
 export default function Page() {
-    const ctfDate = new Date("2024-10-11").getTime()
+    const ctfDate = new Date("2024-10-11T20:00:00+08:00").getTime()
     return <>
         <CrateTemplate></CrateTemplate>
         <div className="flex flex-col gap-4">
