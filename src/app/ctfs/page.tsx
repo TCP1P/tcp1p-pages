@@ -57,7 +57,13 @@ export default function Page() {
             repoUrl: "https://github.com/TCP1P/INTECHFEST-CTF-2024-Challenges-Public",
             date: new Date("2024-9-9"),
             children: "The Information and Technology Festival, also known as INTECFEST, is an event hosted by the Computer Club at Bali State Polytechnic. It consists of three main events: Web Design Competition, UI/UX Competition, and Capture The Flag (CTF)."
-        }
+        },
+        {
+            title: "TCP1P CTF 2024",
+            repoUrl: "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public",
+            date: new Date("2024-10-11"),
+            children: "TCP1PCTF 2024 is an annual Capture The Flag (CTF) event organized by the TCP1P community. This marks the second edition of our international CTF event."
+        },
     ];
 
     return (

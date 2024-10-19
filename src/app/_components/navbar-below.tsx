@@ -28,10 +28,10 @@ export function NavbarBelow() {
             title: "Repositories",
             url: "/repositories"
         },
-        {
-            title: "TCP1P CTF 2024",
-            url: "/tcp1pctf-2024"
-        }
+        // {
+        //     title: "TCP1P CTF 2024",
+        //     url: "/tcp1pctf-2024"
+        // }
     ]
     return <>
         <div className="w-full flex justify-center mt-4">
