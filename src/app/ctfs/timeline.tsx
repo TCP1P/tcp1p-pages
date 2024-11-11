@@ -1,50 +1,137 @@
-import React from "react"
+import {
+    faRocket,
+    faGift,
+    faCapsules,
+    faAnchorLock,
+    faHamburger,
+    faHouseChimneyUser,
+    faGamepad,
+    faHandsHolding,
+    faLadderWater
+} from "@fortawesome/free-solid-svg-icons";
 
-export interface TimelineProps {
-    title: string,
-    repoUrl: string,
-    date: Date,
-    children?: React.ReactNode | undefined,
-    n?: number,
-}
-
-export function Timeline({ title, repoUrl, children, date, n }: TimelineProps) {
-    const isStart = (n || 0) % 2 == 1
-    const classStart = 'timeline-start md:text-end mb-10'
-    const classEnd = 'timeline-end md:text-start mb-10'
-    const classUsed = isStart ? classStart : classEnd
-
-    return <>
-        <div className="timeline-middle">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="h-5 w-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
-        </div>
-        <div className={classUsed}>
-            <time className="font-mono italic">{date.toDateString()}</time>
-            <div className="text-lg font-black"><a className="link" target="_blank" href={repoUrl}>{title}</a></div>
-            <p>{children}</p>
-        </div>
-        <hr />
-    </>
-}
-
-export interface TimelinesProps {
-    timelines: TimelineProps[]
-}
-
-export function Timelines({ timelines }: TimelinesProps) {
-    var n = 0
-    return <>
-        <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
-            {timelines.map((t) => {
-                n += 1
-                return <>
-                    <li key={n}>
-                        <Timeline title={t.title} repoUrl={t.repoUrl} n={n} date={t.date}>
-                            {t.children}
-                        </Timeline>
-                    </li>
-                </>
-            })}
-        </ul>
-    </>
-}
+export const timelineData = [
+    {
+        year: "2024",
+        months: [
+            {
+                name: "October",
+                progress: 90,
+                events: [
+                    {
+                        icon: faRocket,
+                        title: "TCP1P CTF 2024",
+                        date: "Oct 11, 2024",
+                        repoUrl: "https://github.com/TCP1P/TCP1P-CTF-2024-Challenges-Public",
+                        description: "TCP1PCTF 2024 is an annual Capture The Flag (CTF) event organized by the TCP1P community. This marks the second edition of our international CTF event."
+                    }
+                ]
+            },
+            {
+                name: "September",
+                progress: 80,
+                events: [
+                    {
+                        icon: faCapsules,
+                        title: "INTECHFEST CTF 2024",
+                        date: "Sep 09, 2024",
+                        repoUrl: "https://github.com/TCP1P/INTECHFEST-CTF-2024-Challenges-Public",
+                        description: "The Information and Technology Festival, also known as INTECFEST, is an event hosted by the Computer Club at Bali State Polytechnic. It consists of three main events: Web Design Competition, UI/UX Competition, and Capture The Flag (CTF)."
+                    }
+                ]
+            },
+            {
+                name: "March",
+                progress: 85,
+                events: [
+                    {
+                        icon: faAnchorLock,
+                        title: "TCP1P CTF Special Ramadhan 2024",
+                        date: "Mar 09, 2024",
+                        repoUrl: "https://github.com/TCP1P/TCP1P-CTF-Special-Ramadhan-2024",
+                        description: "TCP1P Capture The Flag (CTF) is CTF playground event conducted during Ramadhan in 2024."
+                    }
+                ]
+            },
+        ]
+    },
+    {
+        year: "2023",
+        months: [
+            {
+                name: "December",
+                progress: 80,
+                events: [
+                    {
+                        icon: faHandsHolding,
+                        title: "TECHCOMFEST 2024",
+                        date: "Dec 20, 2023",
+                        repoUrl: "https://github.com/TCP1P/TECHCOMFEST2024",
+                        description: "TECHCOMFEST CTF is a Capture The Flag (CTF) event organized by Politeknik Negeri Semarang in collaboration with TCP1P."
+                    },
+                    {
+                        icon: faGift,
+                        title: "TCP1P Playground 2023",
+                        date: "Dec 01, 2023",
+                        repoUrl: "https://github.com/TCP1P/TCP1P-Playground-2023",
+                        description: "TCP1P Playground is an event organized by TCP1P designed for learning purposes. It features easy to medium challenges in a variety of categories and is exclusively open to participants from Indonesia."
+                    }
+                ]
+            },
+            {
+                name: "November",
+                progress: 75,
+                events: [
+                    {
+                        icon: faHamburger,
+                        title: "Securi(e) The System 2023",
+                        date: "Nov 29, 2023",
+                        repoUrl: "https://github.com/TCP1P/SecureTheSystem2023",
+                        description: "Securie The System CTF is organized by the University of Kuningan in collaboration with TCP1P."
+                    }
+                ]
+            },
+            {
+                name: "November",
+                progress: 85,
+                events: [
+                    {
+                        icon: faHouseChimneyUser,
+                        title: "TCP1P CTF 2023",
+                        date: "Oct 13, 2023",
+                        repoUrl: "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges",
+                        description: (
+                            <>
+                                TCP1PCTF 2023 took place in October 2023 and achieved a favorable rating on{" "}
+                                <a href="https://ctftime.org/event/2001" className="link" target="_blank">
+                                    CTFtime
+                                </a>
+                                , with a score of 24.85.
+                            </>
+                        ),
+                    },
+                    {
+                        icon: faLadderWater,
+                        title: "Hology6",
+                        date: "Oct 8, 2023",
+                        repoUrl: "https://github.com/Hology6",
+                        description: "Hology6 CTF is a Capture The Flag (CTF) event hosted by the Faculty of Computer Science at Brawijaya University."
+                    }
+                ]
+            },
+            {
+                name: "September",
+                progress: 55,
+                events: [
+                    {
+                        icon: faGamepad,
+                        title: "INTECHFEST CTF 2023",
+                        date: "Sep 09, 2023",
+                        repoUrl: "https://github.com/TCP1P/INTECHFEST-CTF-2023-Challenges",
+                        description: "The Information and Technology Festival, also known as INTECFEST, is an event hosted by the Computer Club at Bali State Polytechnic. It consists of three main events: Web Design Competition, UI/UX Competition, and Capture The Flag (CTF)."
+                    }
+                ]
+            }
+        ]
+    }
+];
