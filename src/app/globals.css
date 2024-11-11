@@ -1,3 +1,96 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.background-lines {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  opacity: 0.2;
+}
+
+.line {
+  position: absolute;
+  width: 2px;
+  height: 200px;
+  background: linear-gradient(180deg, transparent, #ff6b6b, transparent);
+  animation: float 8s infinite ease-in-out;
+}
+
+.line:nth-child(1) {
+  left: 20%;
+  top: -100px;
+  transform: rotate(45deg);
+  animation-delay: -2s;
+}
+
+.line:nth-child(2) {
+  left: 40%;
+  top: -50px;
+  transform: rotate(-45deg);
+  animation-delay: -1s;
+}
+
+.line:nth-child(3) {
+  right: 30%;
+  top: -150px;
+  transform: rotate(35deg);
+  animation-delay: -3s;
+}
+
+.line:nth-child(4) {
+  right: 20%;
+  top: -80px;
+  transform: rotate(-35deg);
+  animation-delay: -4s;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0) rotate(45deg);
+  }
+  50% {
+    transform: translateY(400px) rotate(45deg);
+  }
+}
+
+.glow {
+  position: fixed;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(255, 59, 59, 0.2) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.nav-item.active {
+  color: #f87171;
+  font-weight: 500;
+}
+
+.nav-item::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #f87171;
+  transition: width 0.3s;
+}
+
+.nav-item:hover::after,
+.nav-item.active::after {
+  width: 100%;
+}
+
+.error-404 {
+  font-size: 180px;
+  font-weight: 900;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 30px rgba(255, 59, 59, 0.3);
+  letter-spacing: -10px;
+  line-height: 1;
+}
