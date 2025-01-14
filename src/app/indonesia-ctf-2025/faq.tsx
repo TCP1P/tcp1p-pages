@@ -1,3 +1,5 @@
+import ExternalLink from "../_components/external-link";
+
 export function FAQ() {
     const faqs = [
         {
@@ -21,14 +23,14 @@ export function FAQ() {
         },
         {
             text: 'How to join?',
-            description: `
+            description: <>
                 To join this CTF, we recommend that you first create a team on CTFtime. Once you have formed
-                your team, you can add this <a class="link" target="_blank"
+                your team, you can add this <a className="link" target="_blank"
                     href="https://ctftime.org/event/2256/">event</a> and wait for the start of the CTF on
                 October 11th. Lastly, don't forget to join our Discord server for more information. Here is the
-                link: <a class="link" target="_blank" rel="noopener noreferrer"
-                    href="https://discord.gg/Gj6h9TjN3D">Discord</a>.
-            `
+                link: <ExternalLink href="https://discord.gg/Gj6h9TjN3D" mode="red">Discord</ExternalLink>.
+            </>
+                
         }
     ];
 
@@ -37,7 +39,7 @@ export function FAQ() {
             {faqs.map((faq, index) => (
                 <div key={index} className="bg-gray-900/50 backdrop-blur-xl rounded-xl border border-red-500/10 p-6 hover:border-red-400/30 transition-all duration-300">
                     <div className="text-xl font-medium text-white mb-4">{faq.text}</div>
-                    <div className="text-gray-400" dangerouslySetInnerHTML={{ __html: faq.description }}></div>
+                    <div className="text-gray-400">{faq.description}</div>
                 </div>
             ))}
         </div>

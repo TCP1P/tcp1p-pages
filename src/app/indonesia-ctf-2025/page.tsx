@@ -1,3 +1,4 @@
+import ExternalLink from "../_components/external-link";
 import { Categories } from "./categories";
 import { Countdown } from "./countdown";
 import { CrateTemplate } from "./crate";
@@ -44,7 +45,7 @@ export default function Page() {
                         <h2 className="text-4xl text-white mb-10">Discord</h2>
                         <div className="divider mb-10"></div>
                         <p className="text-gray-300">
-                            Join our Discord server for more information. Here is the link: <a className="text-red-400 hover:text-red-300 transition-colors duration-300" target="_blank" rel="noopener noreferrer" href="https://discord.gg/Gj6h9TjN3D">Discord</a>.
+                            Join our Discord server for more information. Here is the link: <ExternalLink mode="red"  href="https://discord.gg/Gj6h9TjN3D">Discord</ExternalLink>.
                         </p>
                     </section>
                     {/* <section className="my-16 p-8">

@@ -9,6 +9,7 @@ import {
     faHandsHolding,
     faLadderWater
 } from "@fortawesome/free-solid-svg-icons";
+import ExternalLink from "../_components/external-link";
 
 export const timelineData = [
     {
@@ -103,9 +104,10 @@ export const timelineData = [
                         description: (
                             <>
                                 TCP1PCTF 2023 took place in October 2023 and achieved a favorable rating on{" "}
-                                <a href="https://ctftime.org/event/2001" className="link" target="_blank">
+                                <ExternalLink href="https://ctftime.org/event/2001" className="link" mode="red">
                                     CTFtime
-                                </a>
+                                </ExternalLink>
+
                                 , with a score of 24.85.
                             </>
                         ),

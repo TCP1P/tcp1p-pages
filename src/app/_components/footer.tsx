@@ -3,6 +3,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCode, faEnvelope, faFlag } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import ExternalLink from './external-link';
 
 const Footer: React.FC = () => {
   return (
@@ -25,35 +26,41 @@ const Footer: React.FC = () => {
           <div className="col-span-1">
             <h3 className="text-white font-medium mb-4">Quick Links</h3>
             <ul className="space-y-2">
-              <li><a href="https://playground.tcp1p.team/" className="text-gray-400 hover:text-red-400 text-sm">Playground</a></li>
-              <li><a href="https://github.com/TCP1P/" className="text-gray-400 hover:text-red-400 text-sm">Resources</a></li>
-              {/* <li><a href="https://dimasma0305.github.io/Cyber-Security-Learning-Resources/" className="text-gray-400 hover:text-red-400 text-sm">Blog</a></li> */}
+              <li>
+                <ExternalLink href='https://playground.tcp1p.team/'>Playground</ExternalLink>
+              </li>
+              <li>
+                <ExternalLink href="https://github.com/TCP1P/">Resources</ExternalLink>
+              </li>
+              {/* <li><ExternalLink href="https://dimasma0305.github.io/Cyber-Security-Learning-Resources/">Blog</ExternalLink></li> */}
             </ul>
           </div>
 
           <div className="col-span-1">
-            <h3 className="text-white font-medium mb-4">Communnity</h3>
+            <h3 className="text-white font-medium mb-4">Community</h3>
             <ul className="space-y-2">
-              <li><a href="https://discord.gg/Gj6h9TjN3D" className="text-gray-400 hover:text-red-400 text-sm">Discord</a></li>
-              {/* <li><a href="https://www.facebook.com/groups/531741829733995/" className="text-gray-400 hover:text-red-400 text-sm">Facebook</a></li> */}
+              <li>
+                <ExternalLink href="https://discord.gg/Gj6h9TjN3D">Discord</ExternalLink>
+              </li>
+              {/* <li><ExternalLink href="https://www.facebook.com/groups/531741829733995/">Facebook</ExternalLink></li> */}
             </ul>
           </div>
 
           <div className="col-span-1">
             <h3 className="text-white font-medium mb-4">Connect</h3>
             <div className="flex space-x-4">
-              <a href="https://github.com/TCP1P" className="w-8 h-8 bg-red-900/30 rounded-lg flex items-center justify-center hover:bg-red-900/50 transition-colors">
+              <ExternalLink href="https://github.com/TCP1P" className="w-8 h-8 bg-red-900/30 rounded-lg flex items-center justify-center hover:bg-red-900/50 transition-colors">
                 <FontAwesomeIcon icon={faGithub} className="text-red-400" />
-              </a>
-              <a href="mailto:tcp1pindo@gmail.com" className="w-8 h-8 bg-red-900/30 rounded-lg flex items-center justify-center hover:bg-red-900/50 transition-colors">
+              </ExternalLink>
+              <ExternalLink href="mailto:tcp1pindo@gmail.com" className="w-8 h-8 bg-red-900/30 rounded-lg flex items-center justify-center hover:bg-red-900/50 transition-colors">
                 <FontAwesomeIcon icon={faEnvelope} className="text-red-400" />
-              </a>
-              <a href="https://ctftime.org/team/187248" className="w-8 h-8 bg-red-900/30 rounded-lg flex items-center justify-center hover:bg-red-900/50 transition-colors">
+              </ExternalLink>
+              <ExternalLink href="https://ctftime.org/team/187248" className="w-8 h-8 bg-red-900/30 rounded-lg flex items-center justify-center hover:bg-red-900/50 transition-colors">
                 <FontAwesomeIcon icon={faFlag} className="text-red-400" />
-              </a>
-              <a href="https://www.linkedin.com/company/tcp1p/" className="w-8 h-8 bg-red-900/30 rounded-lg flex items-center justify-center hover:bg-red-900/50 transition-colors">
+              </ExternalLink>
+              <ExternalLink href="https://www.linkedin.com/company/tcp1p/" className="w-8 h-8 bg-red-900/30 rounded-lg flex items-center justify-center hover:bg-red-900/50 transition-colors">
                 <FontAwesomeIcon icon={faLinkedin} className="text-red-400" />
-              </a>
+              </ExternalLink>
             </div>
           </div>
         </div>
