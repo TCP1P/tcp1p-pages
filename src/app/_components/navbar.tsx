@@ -31,8 +31,8 @@ const Navbar: React.FC = () => {
             <Link href="/repositories" className="nav-item text-gray-300 hover:text-red-400 transition-colors duration-300">
               Repositories
             </Link>
-            <Link href="/tcp1pctf-2025" className="nav-item text-gray-300 hover:text-red-400 transition-colors duration-300">
-              TCP1P CTF 2025
+            <Link href="/indonesia-ctf-2025" className="nav-item text-gray-300 hover:text-red-400 transition-colors duration-300">
+              INDONESIA CTF 2025
             </Link>
           </div>
 
