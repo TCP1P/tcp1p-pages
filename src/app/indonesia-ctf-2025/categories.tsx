@@ -13,11 +13,11 @@ export function Categories() {
             text: 'Reverse Engineering',
             description: 'This category involves analyzing and understanding the functionality of compiled code or binary files.'
         },
-        {
-            iconClass: faPhone,
-            text: 'Mobile',
-            description: 'This category deals with security challenges related to mobile applications and devices.'
-        },
+        // {
+        //     iconClass: faPhone,
+        //     text: 'Mobile',
+        //     description: 'This category deals with security challenges related to mobile applications and devices.'
+        // },
         {
             iconClass: faLock,
             text: 'Cryptography',
@@ -43,11 +43,11 @@ export function Categories() {
             text: 'Blockchain',
             description: 'This category involves challenges related to blockchain technology.'
         },
-        {
-            iconClass: faGamepad,
-            text: 'Game Exploitation',
-            description: 'This category features challenges related to game development and exploiting or bypassing game security.'
-        },
+        // {
+        //     iconClass: faGamepad,
+        //     text: 'Game Exploitation',
+        //     description: 'This category features challenges related to game development and exploiting or bypassing game security.'
+        // },
         {
             iconClass: faSearch,
             text: 'OSINT',
