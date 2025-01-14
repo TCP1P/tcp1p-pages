@@ -92,7 +92,7 @@ export const timelineData = [
                 ]
             },
             {
-                name: "November",
+                name: "October",
                 progress: 85,
                 events: [
                     {
