@@ -1,6 +1,11 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 
-const ExternalLink = ({ href, children }) => {
+interface ExternalLinkProps {
+  href: string;
+  children: ReactNode;
+}
+
+const ExternalLink: React.FC<ExternalLinkProps> = ({ href, children }) => {
   return (
     <a href={href} target="_blank" className="mt-4 cursor-pointer">
       {children}
