@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Button from "./_components/button";
 
 export default function Home() {
@@ -11,7 +12,7 @@ export default function Home() {
         </div>
 
         <h1 className="text-white text-5xl md:text-7xl font-semibold mb-6 leading-tight text-center">
-          The Largest Community <span className="text-transparent bg-clip-text bg-gradient-to-br from-red-600 to-red-950">(CTF)<br />Capture the Flags</span> in the Nusantara.
+          One of The Largest Community <span className="text-transparent bg-clip-text bg-gradient-to-br from-red-600 to-red-950">(CTF)<br />Capture the Flags</span> in the Nusantara.
         </h1>
 
         <p className="text-gray-400 text-lg md:text-xl mb-10 max-w-3xl text-center">
@@ -19,8 +20,8 @@ export default function Home() {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button text={"Get Started"}></Button>
-          <Button text={"Join Community"} variant="secondary"></Button>
+          <Button text={"Join Playground"} href="https://playground.tcp1p.team/" target="_blank"></Button>
+          <Button text={"Join Community"} variant="secondary" href="https://discord.gg/KX3KnXQ5f5" target="_blank"></Button>
         </div>
       </div>
     </main>

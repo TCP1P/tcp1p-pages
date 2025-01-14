@@ -6,6 +6,7 @@ import Image from "next/image";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import logo from '../../../public/TCP1P _Main White Red.svg'
+import Button from './button';
 
 const Navbar: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -33,15 +34,13 @@ const Navbar: React.FC = () => {
           </div>
 
           <div className="hidden md:block">
-            <button className="px-6 py-2 bg-gradient-to-r from-red-600 to-red-500 text-white rounded-full font-medium hover:from-red-500 hover:to-red-400 transition-all duration-300 shadow-lg shadow-red-500/30">
-              Get Started
-            </button>
+            <Button text='Join Playground' href='https://playground.tcp1p.team/' target='_blank'></Button>
           </div>
 
           <div className="md:hidden flex items-center space-x-4">
-            <button className="px-4 py-1.5 bg-gradient-to-r from-red-600 to-red-500 text-white text-sm rounded-full font-medium hover:from-red-500 hover:to-red-400 transition-all duration-300 shadow-lg shadow-red-500/30">
+            {/* <button className="px-4 py-1.5 bg-gradient-to-r from-red-600 to-red-500 text-white text-sm rounded-full font-medium hover:from-red-500 hover:to-red-400 transition-all duration-300 shadow-lg shadow-red-500/30">
               Get Started
-            </button>
+            </button> */}
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className="mobile-menu-button p-2 rounded-md text-red-300 hover:bg-red-900/30"

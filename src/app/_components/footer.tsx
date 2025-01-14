@@ -27,7 +27,7 @@ const Footer: React.FC = () => {
             <ul className="space-y-2">
               <li><a href="https://playground.tcp1p.team/" className="text-gray-400 hover:text-red-400 text-sm">Playground</a></li>
               <li><a href="https://github.com/TCP1P/" className="text-gray-400 hover:text-red-400 text-sm">Resources</a></li>
-              <li><a href="https://dimasma0305.github.io/Cyber-Security-Learning-Resources/" className="text-gray-400 hover:text-red-400 text-sm">Blog</a></li>
+              {/* <li><a href="https://dimasma0305.github.io/Cyber-Security-Learning-Resources/" className="text-gray-400 hover:text-red-400 text-sm">Blog</a></li> */}
             </ul>
           </div>
 
@@ -35,7 +35,7 @@ const Footer: React.FC = () => {
             <h3 className="text-white font-medium mb-4">Communnity</h3>
             <ul className="space-y-2">
               <li><a href="https://discord.gg/Gj6h9TjN3D" className="text-gray-400 hover:text-red-400 text-sm">Discord</a></li>
-              <li><a href="https://www.facebook.com/groups/531741829733995/" className="text-gray-400 hover:text-red-400 text-sm">Facebook</a></li>
+              {/* <li><a href="https://www.facebook.com/groups/531741829733995/" className="text-gray-400 hover:text-red-400 text-sm">Facebook</a></li> */}
             </ul>
           </div>
 
