@@ -1,4 +1,4 @@
-'use client'
+'use client';
 import { useEffect, useState } from "react";
 
 export function Countdown({ endDate }: { endDate: number }) {
@@ -29,36 +29,33 @@ export function Countdown({ endDate }: { endDate: number }) {
     }
 
     return (
-        <>
-            <div className="flex gap-5">
+        <div className="rounded-xl text-center">
+            <div className="flex justify-center gap-5 text-white text-2xl font-medium">
                 <div>
-                    <span className="countdown font-mono text-2xl">
-                        {timeLeft.days}
-                    </span>
-                    days
+                    <div className="bg-gray-800/50 rounded-lg p-4 mb-2">
+                        <span className="font-mono">{timeLeft.days}</span>
+                    </div>
+                    <span className="text-gray-400">days</span>
                 </div>
                 <div>
-                    <span className="countdown font-mono text-2xl">
-                        {/* @ts-ignore */}
-                        <span style={{ "--value": timeLeft.hours }}></span>
-                    </span>
-                    hours
+                    <div className="bg-gray-800/50 rounded-lg p-4 mb-2">
+                        <span className="font-mono">{timeLeft.hours}</span>
+                    </div>
+                    <span className="text-gray-400">hours</span>
                 </div>
                 <div>
-                    <span className="countdown font-mono text-2xl">
-                        {/* @ts-ignore */}
-                        <span style={{ "--value": timeLeft.minutes }}></span>
-                    </span>
-                    min
+                    <div className="bg-gray-800/50 rounded-lg p-4 mb-2">
+                        <span className="font-mono">{timeLeft.minutes}</span>
+                    </div>
+                    <span className="text-gray-400">min</span>
                 </div>
                 <div>
-                    <span className="countdown font-mono text-2xl">
-                        {/* @ts-ignore */}
-                        <span style={{ "--value": timeLeft.seconds }}></span>
-                    </span>
-                    sec
+                    <div className="bg-gray-800/50 rounded-lg p-4 mb-2">
+                        <span className="font-mono">{timeLeft.seconds}</span>
+                    </div>
+                    <span className="text-gray-400">sec</span>
                 </div>
             </div>
-        </>
+        </div>
     );
 }
