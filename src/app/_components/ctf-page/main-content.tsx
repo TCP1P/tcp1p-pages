@@ -40,7 +40,7 @@ const MainContent: React.FC<MainContentProps> = ({
 }) => {
     return (
         <main className="flex-1 pt-52 px-4 sm:px-6 lg:px-8 relative z-10">
-            <CrateScript server={discord.server} channel={discord.channel} />
+            {/* <CrateScript server={discord.server} channel={discord.channel} /> */}
             <div className="flex flex-col">
                 <div className="lg:w-8/12 md:w-10/12 self-center text-center mx-4">
                     <div className="items-center">
