@@ -1,7 +1,15 @@
+import { StaticImageData } from "next/image";
 import Bocchi from "../../../public/bochi_duit.jpg";
-import { DonatorCardProps } from "../_components/ctf-page/donator-card";
 
-const donators: DonatorCardProps[] = [
+interface DonatorItem {
+    name: string;
+    text: string;
+    image: StaticImageData;
+    url: string;
+    donate: string;
+}
+
+const donators: DonatorItem[] = [
     {
         name: "Bocchi",
         text: '"Mu-mu-mu-mu-mu-mu-mu-mu-mu-mu-mu-mu-mu-mu-mu-mu-mu-mu-mu-mu-mu-mu-mu-mu-mu-mu-mu-mu-mu-mu-mu-mu-mu-mu-mu-mu-mu-mu-mu-mu-mu-mu-mu-mu-mu-mu-mu-mu-mu-mu-mu-mu-mu-mu" -Bocchi',

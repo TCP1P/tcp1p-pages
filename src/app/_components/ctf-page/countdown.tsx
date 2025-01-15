@@ -1,18 +1,12 @@
 'use client';
 import { useEffect, useState } from "react";
 
-export function Countdown({ endDate }: { endDate: number }) {
-    const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+interface CountdownProps {
+    endDate: number;
+}
 
-    useEffect(() => {
-        const timer = setInterval(() => {
-            setTimeLeft(calculateTimeLeft());
-        }, 1000);
-
-        return () => clearInterval(timer);
-    }, []);
-
-    function calculateTimeLeft() {
+const Countdown: React.FC<CountdownProps> = ({ endDate }) => {
+    const calculateTimeLeft = () => {
         const now = new Date().getTime();
         const difference = endDate - now;
 
@@ -26,7 +20,17 @@ export function Countdown({ endDate }: { endDate: number }) {
         const seconds = Math.floor((difference % (1000 * 60)) / 1000);
 
         return { days, hours, minutes, seconds };
-    }
+    };
+
+    const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+
+    useEffect(() => {
+        const timer = setInterval(() => {
+            setTimeLeft(calculateTimeLeft());
+        }, 1000);
+
+        return () => clearInterval(timer);
+    }, [endDate]);
 
     return (
         <div className="rounded-xl text-center">
@@ -58,4 +62,6 @@ export function Countdown({ endDate }: { endDate: number }) {
             </div>
         </div>
     );
-}
+};
+
+export default Countdown;
