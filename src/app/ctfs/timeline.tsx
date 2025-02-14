@@ -7,14 +7,47 @@ import {
     faHouseChimneyUser,
     faGamepad,
     faHandsHolding,
-    faLadderWater
+    faLadderWater,
+    faTape
 } from "@fortawesome/free-solid-svg-icons";
 import ExternalLink from "../_components/external-link";
+import { faSafari } from "@fortawesome/free-brands-svg-icons";
 
 export const timelineData = [
     {
+        year: "2025",
+        months: [
+            {
+                name: "January",
+                progress: 75,
+                events: [
+                    {
+                        icon: faTape,
+                        title: "TECHCOMPFEST 2025",
+                        date: "Jan 6, 2025",
+                        repoUrl: "https://github.com/TCP1P/TECHCOMPFEST-2025-PUBLIC",
+                        description: "TECHCOMFEST CTF is a Capture The Flag (CTF) event organized by Politeknik Negeri Semarang in collaboration with TCP1P."
+                    }
+                ]
+            },
+        ]
+    },
+    {
         year: "2024",
         months: [
+            {
+                name: "October",
+                progress: 85,
+                events: [
+                    {
+                        icon: faSafari,
+                        title: "Slashroot 8 CTF 2024",
+                        date: "Oct 11, 2024",
+                        repoUrl: "https://github.com/Kelompok-Studi-Linux-Stikom-Bali/slashroot-8-challs",
+                        description: "Slashroot 8 CTF is a Capture The Flag (CTF) event organized by KSL (Kelompok Studi Linux) STIKOM Bali in collaboration with TCP1P."
+                    }
+                ]
+            },
             {
                 name: "October",
                 progress: 90,
