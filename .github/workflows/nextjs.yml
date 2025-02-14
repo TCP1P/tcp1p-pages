@@ -83,7 +83,7 @@ jobs:
       - name: Upload artifact
         # This GitHub Pages–specific action (upload-pages-artifact) is maintained by GitHub
         # and does not rely on the deprecated actions/upload-artifact@v3.
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v4
         with:
           path: ./out
 
