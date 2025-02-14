@@ -8,7 +8,8 @@ import {
     faGamepad,
     faHandsHolding,
     faLadderWater,
-    faTape
+    faTape,
+    faTachometer
 } from "@fortawesome/free-solid-svg-icons";
 import ExternalLink from "../_components/external-link";
 import { faSafari } from "@fortawesome/free-brands-svg-icons";
@@ -36,13 +37,26 @@ export const timelineData = [
         year: "2024",
         months: [
             {
-                name: "October",
+                name: "December",
+                progress: 80,
+                events: [
+                    {
+                        icon: faTachometer,
+                        title: "TSA Cyber Champion 2024",
+                        date: "Dec 25, 2024",
+                        repoUrl: "https://github.com/bayufedra/CTF-Challenge-Archive/tree/main/2024-TSA-Cyber-Champion",
+                        description: "TSA Cyber Champion 2024 is a Capture The Flag (CTF) event organized by digitalent komdigi in collaboration with TCP1P as challenge author."
+                    }
+                ]
+            },
+            {
+                name: "August",
                 progress: 85,
                 events: [
                     {
                         icon: faSafari,
                         title: "Slashroot 8 CTF 2024",
-                        date: "Oct 11, 2024",
+                        date: "Aug 14, 2024",
                         repoUrl: "https://github.com/Kelompok-Studi-Linux-Stikom-Bali/slashroot-8-challs",
                         description: "Slashroot 8 CTF is a Capture The Flag (CTF) event organized by KSL (Kelompok Studi Linux) STIKOM Bali in collaboration with TCP1P."
                     }
