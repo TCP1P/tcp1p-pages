@@ -20,7 +20,7 @@ export default function Home() {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button text={"Join Playground"} href="https://playground.tcp1p.team/" target="_blank"></Button>
+          <Button text={"Join Playground"} href="https://tcp.1pc.tf/" target="_blank"></Button>
           <Button text={"Join Community"} variant="secondary" href="https://discord.gg/KX3KnXQ5f5" target="_blank"></Button>
         </div>
       </div>

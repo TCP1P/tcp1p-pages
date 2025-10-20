@@ -27,7 +27,7 @@ const Footer: React.FC = () => {
             <h3 className="text-white font-medium mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <ExternalLink href='https://playground.tcp1p.team/'>Playground</ExternalLink>
+                <ExternalLink href='https://tcp.1pc.tf/'>Playground</ExternalLink>
               </li>
               <li>
                 <ExternalLink href="https://github.com/TCP1P/">Resources</ExternalLink>

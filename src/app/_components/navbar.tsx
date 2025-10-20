@@ -21,7 +21,7 @@ const Navbar: React.FC = () => {
 
   const buttonProps = {
     text: 'Join Playground',
-    href: 'https://playground.tcp1p.team/',
+    href: 'https://tcp.1pc.tf/',
   };
 
   return (
