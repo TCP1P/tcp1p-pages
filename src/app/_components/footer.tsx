@@ -40,7 +40,7 @@ const Footer: React.FC = () => {
             <h3 className="text-white font-medium mb-4">Community</h3>
             <ul className="space-y-2">
               <li>
-                <ExternalLink href="https://discord.gg/Gj6h9TjN3D">Discord</ExternalLink>
+                <ExternalLink href="https://discord.gg/KX3KnXQ5f5">Discord</ExternalLink>
               </li>
               {/* <li><ExternalLink href="https://www.facebook.com/groups/531741829733995/">Facebook</ExternalLink></li> */}
             </ul>

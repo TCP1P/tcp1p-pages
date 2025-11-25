@@ -18,7 +18,7 @@ const Page: React.FC = () => {
     }
 
     return (
-        <MainContent 
+        <MainContent
             title={title}
             date={ctfDate}
             subtitle={subtitle}

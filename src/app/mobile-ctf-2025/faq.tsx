@@ -27,7 +27,7 @@ const faqs = [
             October 11th. Lastly, don't forget to join our Discord server for more information. Here is the
             link: <ExternalLink href="https://discord.gg/Gj6h9TjN3D" mode="red">Discord</ExternalLink>.
         </>
-            
+
     }
 ];
 

@@ -18,7 +18,7 @@ const Page: React.FC = () => {
     }
 
     return (
-        <MainContent 
+        <MainContent
             title={title}
             date={ctfDate}
             subtitle={subtitle}
@@ -28,8 +28,8 @@ const Page: React.FC = () => {
             categories={categories}
             faqs={faq}
             sponsors={sponsors}
-            donators={donators} 
-            discord={discord}            
+            donators={donators}
+            discord={discord}
         />
     );
 };
