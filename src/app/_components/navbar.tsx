@@ -15,8 +15,6 @@ const Navbar: React.FC = () => {
     { href: "/", text: "Home" },
     { href: "/ctfs", text: "CTF's" },
     { href: "/repositories", text: "Repositories" },
-    { href: "/indonesia-ctf-2025", text: "INDONESIA CTF 2025" },
-    { href: "/mobile-ctf-2025", text: "Mobile CTF 2025" },
   ];
 
   const buttonProps = {
