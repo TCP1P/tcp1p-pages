@@ -19,6 +19,19 @@ export const timelineData = [
         year: "2025",
         months: [
             {
+                name: "September",
+                progress: 100,
+                events: [
+                    {
+                        icon: faCapsules,
+                        title: "INTECHFEST CTF 2025",
+                        date: "Sep 06, 2025",
+                        repoUrl: "https://github.com/TCP1P/INTECHFEST-2025-Public",
+                        description: "The Information and Technology Festival, also known as INTECFEST, is an event hosted by the Computer Club at Bali State Polytechnic. It consists of three main events: Web Design Competition, UI/UX Competition, and Capture The Flag (CTF)."
+                    }
+                ]
+            },
+            {
                 name: "January",
                 progress: 75,
                 events: [
