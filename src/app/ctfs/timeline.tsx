@@ -44,6 +44,19 @@ export const timelineData = [
                     }
                 ]
             },
+            {
+                name: "March",
+                progress: 75,
+                events: [
+                    {
+                        icon: faAnchorLock,
+                        title: "TCP1P CTF Special Ramadhan 2025",
+                        date: "Mar 4, 2025",
+                        repoUrl: "https://github.com/TCP1P/TCP1P-CTF-Special-Ramadhan-2025",
+                        description: "TCP1P Capture The Flag (CTF) is a CTF playground event conducted during Ramadhan in 2025."
+                    }
+                ]
+            },
         ]
     },
     {
