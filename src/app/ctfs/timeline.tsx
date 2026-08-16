@@ -19,41 +19,22 @@ export const timelineData = [
         year: "2026",
         months: [
             {
-                name: "May",
-                progress: 85,
-                events: [
-                    {
-                        icon: faCapsules,
-                        title: "Vincoo CTF",
-                        date: "May 23, 2026",
-                        repoUrl: "https://github.com/TCP1P/Vincoo-CTF",
-                        description: "Vincoo CTF challenge repository."
-                    }
-                ]
-            },
-            {
-                name: "March",
+                name: "January",
                 progress: 90,
                 events: [
                     {
                         icon: faHandsHolding,
                         title: "findit CTF 2026",
-                        date: "Mar 21, 2026",
+                        date: "Jan 1, 2026",
                         repoUrl: "https://github.com/TCP1P/findit-ctf-2026",
                         description: "findit CTF 2026 challenge repository."
-                    }
-                ]
-            },
-            {
-                name: "January",
-                progress: 90,
-                events: [
+                    },
                     {
-                        icon: faGift,
-                        title: "TCP1P CTF Special Crismas 2025",
-                        date: "Jan 2, 2026",
-                        repoUrl: "https://github.com/TCP1P/TCP1P-CTF-Special-Crismas-2025",
-                        description: "TCP1P CTF Special CTF repository for the Crismas challenge series."
+                        icon: faCapsules,
+                        title: "Vincoo CTF",
+                        date: "Jan 20, 2026",
+                        repoUrl: "https://github.com/TCP1P/Vincoo-CTF",
+                        description: "Vincoo CTF challenge repository."
                     },
                     {
                         icon: faTape,
@@ -92,6 +73,19 @@ export const timelineData = [
                         date: "Sep 06, 2025",
                         repoUrl: "https://github.com/TCP1P/INTECHFEST-2025-Public",
                         description: "The Information and Technology Festival, also known as INTECFEST, is an event hosted by the Computer Club at Bali State Polytechnic. It consists of three main events: Web Design Competition, UI/UX Competition, and Capture The Flag (CTF)."
+                    }
+                ]
+            },
+            {
+                name: "October",
+                progress: 75,
+                events: [
+                    {
+                        icon: faGift,
+                        title: "TCP1P CTF Special Crismas 2025",
+                        date: "Oct 12, 2025",
+                        repoUrl: "https://github.com/TCP1P/TCP1P-CTF-Special-Crismas-2025",
+                        description: "TCP1P CTF Special Crismas 2025 repository."
                     }
                 ]
             },
