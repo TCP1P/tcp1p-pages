@@ -16,8 +16,72 @@ import { faSafari } from "@fortawesome/free-brands-svg-icons";
 
 export const timelineData = [
     {
+        year: "2026",
+        months: [
+            {
+                name: "May",
+                progress: 85,
+                events: [
+                    {
+                        icon: faCapsules,
+                        title: "Vincoo CTF",
+                        date: "May 23, 2026",
+                        repoUrl: "https://github.com/TCP1P/Vincoo-CTF",
+                        description: "Vincoo CTF challenge repository."
+                    }
+                ]
+            },
+            {
+                name: "March",
+                progress: 90,
+                events: [
+                    {
+                        icon: faHandsHolding,
+                        title: "findit CTF 2026",
+                        date: "Mar 21, 2026",
+                        repoUrl: "https://github.com/TCP1P/findit-ctf-2026",
+                        description: "findit CTF 2026 challenge repository."
+                    }
+                ]
+            },
+            {
+                name: "January",
+                progress: 90,
+                events: [
+                    {
+                        icon: faGift,
+                        title: "TCP1P CTF Special Crismas 2025",
+                        date: "Jan 2, 2026",
+                        repoUrl: "https://github.com/TCP1P/TCP1P-CTF-Special-Crismas-2025",
+                        description: "TCP1P CTF Special CTF repository for the Crismas challenge series."
+                    },
+                    {
+                        icon: faTape,
+                        title: "TECHCOMPFEST CTF 2026 - Finals",
+                        date: "Jan 20, 2026",
+                        repoUrl: "https://github.com/TCP1P/TECHCOMPFEST-CTF-2026-Finals",
+                        description: "TECHCOMFEST CTF 2026 Finals in collaboration with TCP1P."
+                    }
+                ]
+            }
+        ]
+    },
+    {
         year: "2025",
         months: [
+            {
+                name: "November",
+                progress: 90,
+                events: [
+                    {
+                        icon: faTape,
+                        title: "TECHCOMPFEST CTF 2026 - Qualifiers",
+                        date: "Nov 27, 2025",
+                        repoUrl: "https://github.com/TCP1P/TECHCOMPFEST-CTF-2026-Quals",
+                        description: "TECHCOMFEST CTF 2026 qualifiers in collaboration with TCP1P."
+                    }
+                ]
+            },
             {
                 name: "September",
                 progress: 100,
@@ -54,6 +118,19 @@ export const timelineData = [
                         date: "Mar 4, 2025",
                         repoUrl: "https://github.com/TCP1P/TCP1P-CTF-Special-Ramadhan-2025",
                         description: "TCP1P Capture The Flag (CTF) is a CTF playground event conducted during Ramadhan in 2025."
+                    }
+                ]
+            },
+            {
+                name: "February",
+                progress: 70,
+                events: [
+                    {
+                        icon: faRocket,
+                        title: "TCP1P Playground 365 2025",
+                        date: "Feb 12, 2025",
+                        repoUrl: "https://github.com/TCP1P/TCP1P-Playground-365-2025",
+                        description: "TCP1P Playground 365 is a CTF challenge collection managed by TCP1P."
                     }
                 ]
             },
