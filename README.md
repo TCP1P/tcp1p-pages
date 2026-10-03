@@ -1,36 +1,34 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# TCP1P
 
-## Getting Started
+The TCP1P community website: a playground entry point, CTF archive, and directory of open source projects. Built with Next.js App Router and Tailwind CSS, with a static export for GitHub Pages.
 
-First, run the development server:
+## Local development
 
-```bash
+Use Node.js 20 and npm, matching the repository's GitHub Actions workflow.
+
+```sh
+npm ci
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open `http://localhost:3000`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Checks and build
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```sh
+npm run lint
+npm run build
+```
 
-## Learn More
+The build also checks TypeScript and generates the static site in `out/`. Serve that directory with a static web server to preview the production output. The existing workflow in `.github/workflows/nextjs.yml` handles GitHub Pages deployment.
 
-To learn more about Next.js, take a look at the following resources:
+## Editing content
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `src/app/page.tsx`: home page. Recent archive entries are derived from the CTF data.
+- `src/app/ctfs/timeline.tsx`: event names, dates, descriptions, and challenge repository links. The archive displays entries newest first; retain the existing date format when adding entries.
+- `src/app/repositories/repositories.tsx`: project descriptions and source links.
+- `src/app/indonesia-ctf-2025/` and `src/app/mobile-ctf-2025/`: archived event information.
+- `src/app/_components/`: shared navigation, footer, event sections, and archive components.
+- `src/app/globals.css`: shared visual styles and responsive behavior.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Keep event dates and links grounded in the event's published information. When adding or changing routes, check the mobile menu, keyboard navigation, narrow screens, and static export. Use `src/app/not-found.tsx` for the App Router's 404 page.

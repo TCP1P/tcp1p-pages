@@ -11,8 +11,8 @@ import {
     faTape,
     faTachometer
 } from "@fortawesome/free-solid-svg-icons";
-import ExternalLink from "../_components/external-link";
 import { faSafari } from "@fortawesome/free-brands-svg-icons";
+import ExternalLink from "../_components/external-link";
 
 export const timelineData = [
     {
@@ -245,16 +245,7 @@ export const timelineData = [
                         title: "TCP1P CTF 2023",
                         date: "Oct 13, 2023",
                         repoUrl: "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges",
-                        description: (
-                            <>
-                                TCP1PCTF 2023 took place in October 2023 and achieved a favorable rating on{" "}
-                                <ExternalLink href="https://ctftime.org/event/2001" className="link" mode="red">
-                                    CTFtime
-                                </ExternalLink>
-
-                                , with a score of 24.85.
-                            </>
-                        ),
+                        description: <>TCP1P CTF 2023 challenge repository. <ExternalLink href="https://ctftime.org/event/2001" mode="red">View the event on CTFtime</ExternalLink>.</>,
                     },
                     {
                         icon: faLadderWater,

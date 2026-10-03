@@ -1,12 +1,12 @@
 'use client';
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 
 interface CountdownProps {
     endDate: number;
 }
 
 const Countdown: React.FC<CountdownProps> = ({ endDate }) => {
-    const calculateTimeLeft = () => {
+    const calculateTimeLeft = useCallback(() => {
         const now = new Date().getTime();
         const difference = endDate - now;
 
@@ -20,7 +20,7 @@ const Countdown: React.FC<CountdownProps> = ({ endDate }) => {
         const seconds = Math.floor((difference % (1000 * 60)) / 1000);
 
         return { days, hours, minutes, seconds };
-    };
+    }, [endDate]);
 
     const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
 
@@ -30,7 +30,7 @@ const Countdown: React.FC<CountdownProps> = ({ endDate }) => {
         }, 1000);
 
         return () => clearInterval(timer);
-    }, [endDate]);
+    }, [calculateTimeLeft]);
 
     return (
         <div className="rounded-xl text-center">

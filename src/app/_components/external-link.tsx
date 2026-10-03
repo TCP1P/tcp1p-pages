@@ -12,7 +12,7 @@ const ExternalLink: React.FC<ExternalLinkProps> = ({ href, children, className, 
   const modeClass = mode === 'red' ? 'text-red-400 hover:text-red-300' : 'text-gray-400 hover:text-gray-300';
 
   return (
-    <a href={href} target="_blank" className={`${baseClass} ${modeClass} ${className}`}>
+    <a href={href} target="_blank" rel="noopener noreferrer" className={`${baseClass} ${modeClass} ${className ?? ''}`}>
       {children}
     </a>
   );

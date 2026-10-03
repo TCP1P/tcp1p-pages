@@ -1,69 +1,58 @@
-"use client"
+"use client";
 
-import { useState } from 'react';
-import Link from 'next/link';
+import { useEffect, useRef, useState } from "react";
+import Link from "next/link";
 import Image from "next/image";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
-import logo from '../../../public/TCP1P _Main White Red.svg'
-import Button from './button';
+import { usePathname } from "next/navigation";
+import logo from "../../../public/TCP1P _Main White Red.svg";
 
-const Navbar: React.FC = () => {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+const navLinks = [
+  { href: "/", text: "Home" },
+  { href: "/ctfs", text: "CTFs" },
+  { href: "/repositories", text: "Repositories" },
+];
 
-  const navLinks = [
-    { href: "/", text: "Home" },
-    { href: "/ctfs", text: "CTF's" },
-    { href: "/repositories", text: "Repositories" },
-  ];
+export default function Navbar() {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const menuButton = useRef<HTMLButtonElement>(null);
+  const pathname = usePathname();
 
-  const buttonProps = {
-    text: 'Join Playground',
-    href: 'https://tcp.1pc.tf/',
-  };
+  useEffect(() => setMenuOpen(false), [pathname]);
+  useEffect(() => {
+    const closeOnEscape = (event: KeyboardEvent) => {
+      if (event.key === "Escape" && menuOpen) {
+        setMenuOpen(false);
+        menuButton.current?.focus();
+      }
+    };
+    window.addEventListener("keydown", closeOnEscape);
+    return () => window.removeEventListener("keydown", closeOnEscape);
+  }, [menuOpen]);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 bg-gray-900/80 backdrop-blur-lg border-b border-red-500/10 z-50">
-      <div className="max-w-7xl mx-auto">
-        <div className="flex items-center justify-between h-16 px-4 sm:px-6 lg:px-8">
-          <div className="flex-shrink-0">
-            <div className="flex items-center space-x-2">
-              <Image src={logo} alt={"TCP1P Logo"} width={120}></Image>
-            </div>
-          </div>
-
-          <div className="hidden md:flex items-center justify-center space-x-8">
-            {navLinks.map((link, index) => (
-              <Link key={index} href={link.href} className="nav-item text-gray-300 hover:text-red-400 transition-colors duration-300">
-                {link.text}
-              </Link>
-            ))}
-          </div>
-
-          <div className="hidden md:block">
-            <Button text={buttonProps.text} href={buttonProps.href} target='_blank'></Button>
-          </div>
-
-          <div className="md:hidden flex items-center space-x-4">
-            <button
-              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="mobile-menu-button p-2 rounded-md text-red-300 hover:bg-red-900/30"
-            >
-              <FontAwesomeIcon icon={faBars} />
-            </button>
-          </div>
-        </div>
-
-        <div className={`mobile-menu md:hidden px-4 pb-4 ${isMobileMenuOpen ? '' : 'hidden'}`}>
-          {navLinks.map((link, index) => (
-            <Link key={index} href={link.href} className="block px-4 py-2 text-gray-300 hover:text-red-400 transition-colors duration-300">
+    <header className="site-header">
+      <nav className="content-shell header-inner" aria-label="Main navigation">
+        <Link className="brand-link" href="/" aria-label="TCP1P home" onClick={() => setMenuOpen(false)}>
+          <Image src={logo} alt="" width={104} priority />
+        </Link>
+        <div className="desktop-nav">
+          {navLinks.map((link) => (
+            <Link key={link.href} href={link.href} className="nav-link" aria-current={pathname === link.href ? "page" : undefined}>
               {link.text}
             </Link>
           ))}
         </div>
+        <a className="header-cta" href="https://tcp.1pc.tf/" target="_blank" rel="noopener noreferrer">Playground <span aria-hidden="true">↗</span></a>
+        <button ref={menuButton} className="menu-toggle" type="button" aria-label={menuOpen ? "Close menu" : "Open menu"} aria-expanded={menuOpen} aria-controls="mobile-navigation" onClick={() => setMenuOpen((open) => !open)}>
+          <span className={menuOpen ? "menu-icon is-open" : "menu-icon"} aria-hidden="true"><i /><i /></span>
+        </button>
+      </nav>
+      <div id="mobile-navigation" className={menuOpen ? "mobile-nav is-open" : "mobile-nav"} hidden={!menuOpen}>
+        {navLinks.map((link) => (
+          <Link key={link.href} href={link.href} aria-current={pathname === link.href ? "page" : undefined} onClick={() => setMenuOpen(false)}>{link.text}</Link>
+        ))}
+        <a href="https://tcp.1pc.tf/" target="_blank" rel="noopener noreferrer" onClick={() => setMenuOpen(false)}>Playground ↗</a>
       </div>
-    </nav>
+    </header>
   );
-};
-
-export default Navbar;
+}

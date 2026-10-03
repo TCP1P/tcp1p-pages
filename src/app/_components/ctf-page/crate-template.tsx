@@ -8,7 +8,7 @@ interface CrateScriptProps {
 
 const CrateScript: React.FC<CrateScriptProps> = ({ server, channel }) => {
     return (
-        <Script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" dangerouslySetInnerHTML={{
+        <Script id="widgetbot-crate" src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" dangerouslySetInnerHTML={{
             __html: `
                 new Crate({
                     server: '${server}', 
